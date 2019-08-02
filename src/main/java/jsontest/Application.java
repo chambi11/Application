@@ -46,5 +46,7 @@ public class Application {
 			logger.error("Error caght in serilizeJsonToFile func , " + e.getMessage());
 			throw e;
 		}
+	
 	}
+
 }
