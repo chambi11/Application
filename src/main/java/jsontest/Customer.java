@@ -1,6 +1,5 @@
 package jsontest;
 import java.util.ArrayList;
-import java.util.Map;
 
 public class Customer {
 
@@ -55,10 +54,10 @@ public class Customer {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
-	public ArrayList getPhoneNumbers() {
+	public ArrayList<PhoneNumber> getPhoneNumbers() {
 		return phoneNumbers;
 	}
-	public void setPhoneNumbers(ArrayList phoneNumbers) {
+	public void setPhoneNumbers(ArrayList<PhoneNumber> phoneNumbers) {
 		this.phoneNumbers = phoneNumbers;
 	}
 
