@@ -1,0 +1,5 @@
+jsontest\Application.class
+jsontest\Address.class
+jsontest\PhoneNumber.class
+jsontest\PhoneNumberTypeEnum.class
+jsontest\Customer.class
