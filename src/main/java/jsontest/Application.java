@@ -1,6 +1,7 @@
 package jsontest;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -15,7 +16,9 @@ public class Application {
 	public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException {
 
 		try {
-			PropertyConfigurator.configure("src//main//resources//log4j.properties");
+			Properties props = new Properties();
+			props.load(Application.class.getResourceAsStream("/log4j.properties"));
+			PropertyConfigurator.configure(props);
 			serilizeJsonToFile();
 		}
 		catch(Exception e) {
